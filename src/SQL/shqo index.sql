@@ -1,0 +1,1 @@
+show index from sales.cust_california;
