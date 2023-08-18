@@ -26,3 +26,26 @@ ON adr.city_id = cty.city_id
 WHERE adr.district = 'California';
 
 
+CREATE TABLE sales.cus_pay_details AS
+SELECT cus.customer_id
+,pay.payment_id
+,pay.rental_id
+,pay.payment_date
+,ren.rental_id
+,inv.inventory_id
+,flm.title
+,str.store_id
+
+
+FROM sales.cust_california cus
+JOIN sakila.payment pay
+ON cus.customer_id = pay.customer_id
+
+LEFT JOIN sakila.rental ren
+ON pay.rental_id = ren.rental_id
+
+JOIN sakila.inventory inv
+ON ren.inventory_id = inv.inventory_id
+
+JOIN sakila.film flm
+ON inv.film_id = flm.film_id
