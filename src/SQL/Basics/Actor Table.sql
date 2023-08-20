@@ -11,3 +11,8 @@ WHERE film_id = 2);
 SELECT  last_name, COUNT(*)
 FROM sakila.actor
 GROUP BY last_name;
+
+-- WHERE first_name LIKE 'An%'  ORDER BY 
+SELECT * FROM sakila.actor
+WHERE first_name LIKE 'An%'
+ORDER BY first_name,last_name DESC;
