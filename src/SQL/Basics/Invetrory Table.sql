@@ -1,0 +1,1 @@
+SELECT inventory_id  FROM sakila.inventory;
