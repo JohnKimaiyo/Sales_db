@@ -17,3 +17,6 @@ SELECT AVG(amount) FROM payment
 
 -- SELECT MIN(amount) FROM payment
 SELECT MIN(amount) FROM payment
+
+--SELECT MAX(amount) FROM payment
+SELECT MAX(amount) FROM payment
