@@ -14,3 +14,6 @@ SUM(amount) a FROM payment GROUP BY customer_id) AS totals;
 
 -- SELECT AVG(amount) FROM payment
 SELECT AVG(amount) FROM payment
+
+-- SELECT MIN(amount) FROM payment
+SELECT MIN(amount) FROM payment
